@@ -29,6 +29,14 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: |
+            img/*
+            !img/*Zone.Identifier  # Exclude files with colon
+
   deploy:
     name: Deploy
     needs: build
