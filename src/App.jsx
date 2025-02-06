@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import ParticlesBackground from '@/components/ParticlesBackground';
+
 function App() {
   const navManu = [
   { id: 1, name: "About Me"     },
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-black h-full w-full flex flex-row overflow-x-hidden overflow-y-hidden box-border '>
+      <div className='bg-none h-full w-full flex flex-row overflow-x-hidden overflow-y-hidden box-border '>
         <div className='bg-[#2f2f2f] min-w-[280px] w-[280px] relative flex flex-col rounded-2xl'>
           <header className='flex justify-center items-center flex-col text-center p-5 border-b border-[#232526]'>
             <img src="./img/MyProfile.jpeg" alt="My Profile" className="w-35 h-35 rounded-2xl border border-8 border-[#1f2022]" />
@@ -26,10 +28,10 @@ function App() {
             {navManu.map((option, idx) => (
               <button
                 key={idx}
-                className='pl-2 pt-2 pb-2 bg-amber-400 border-b border-[#232526] text-left'>
+                className='pl-2 pt-2 pb-2 border-b border-[#232526] text-left'>
                 <div
                   className='px-4 h-7'>
-                  <span className='text-[.95rem] font-bold bg-purple-600'>{option.name}</span></div>
+                  <span className='text-[.95rem] font-bold'>{option.name}</span></div>
                 </button>
             ))}
           </div>
@@ -38,13 +40,13 @@ function App() {
             <div>Curser effects</div>
           </footer>
         </div>
-        <div className='bg-blue-400 w-full h-full block py-5 mx-0'>
-          <div className='bg-amber-700 text-black max-w-[1350px] h-full py-5 px-14'>
+        <div className='bg-none w-full h-full block py-5 mx-0'>
+          <div className='bg-none text-black max-w-[1350px] h-full py-5 px-14'>
             <div
               id='desktop'
-              className='bg-green-700 h-full rounded-2xl p-8 overflow-y-scroll'>
+              className='bg-[#2f2f2f] h-full rounded-2xl p-8 overflow-y-scroll'>
               <div
-                className='bg-gray-600 '
+                className='bg-none border-2 '
               >
                 Lorem Ipsum
 "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
