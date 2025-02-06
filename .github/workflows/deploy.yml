@@ -14,6 +14,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      # SOLUTION 1: Add clean-up step for Windows metadata files
+      - name: Remove Zone.Identifier files
+        run: find "$GITHUB_WORKSPACE" -name "*Zone.Identifier" -delete
+
       - name: Setup Node
         uses: actions/setup-node@v3
 
@@ -23,19 +27,20 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload production-ready build files
+      - name: Upload production-build
         uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./dist
 
-      - name: Upload artifact
+      # SOLUTION 2: Modified upload with better exclusion
+      - name: Upload images
         uses: actions/upload-artifact@v4
         with:
           name: my-artifact
           path: |
             img/*
-            !img/*Zone.Identifier  # Exclude files with colon
+            !**/*:Zone.Identifier  # More specific exclusion pattern
 
   deploy:
     name: Deploy
@@ -45,7 +50,7 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4  # Update to v4
         with:
           name: production-files
           path: ./dist
