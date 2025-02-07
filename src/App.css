@@ -1,86 +1,48 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-    font-family: Oxygen, sans-serif;
-
-}
-
-#root::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -999999;
-  background-color: #646cff;
-  background-image: radial-gradient(
-    ellipse 1.5px 2px at 1.5px 50%,
-    #0000 0,
-    #0000 90%,
-    #000 100%
-  );
-  background-size: 25px 8px;
-}
-
-/* #root {
+#root {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100dvw;
-  height: 100dvh;
-  background-color: #fff;
-  padding: 0.5rem;
-  text-align: center;
-  font-family: Oxygen, sans-serif;
-  background-image: url('./img/wallpaper.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
-#root {
-  position: relative;
   padding: 0.5rem;
   width: 100dvw;
   height: 100dvh;
-  --primary-colour: #217d73;
-  --primary-colour1: #646cff;
-  --primary-colour2: #aefd9c;
-  --c: #aefd9c;
-  background-color: #02090c;
-  background-image: radial-gradient(4px 100px at 0px 235px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 235px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 117.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 252px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 252px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 126px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 150px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 150px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 75px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 253px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 253px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 126.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 204px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 204px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 102px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 134px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 134px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 67px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 179px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 179px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 89.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 299px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 299px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 149.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 215px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 215px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 107.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 281px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 281px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 140.5px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 158px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 158px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 79px, var(--c) 100%, #0000 150%),
-    radial-gradient(4px 100px at 0px 210px, var(--c), #0000),
-    radial-gradient(4px 100px at 300px 210px, var(--c), #0000),
-    radial-gradient(1.5px 1.5px at 150px 105px, var(--c) 100%, #0000 150%);
+  --primary-colour: #aefd9c;
+  /* background-color: #02090c; */
+  background-image: radial-gradient(4px 100px at 0px 235px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 235px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 117.5px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 252px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 252px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 126px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 150px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 150px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 75px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 253px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 253px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 126.5px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 204px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 204px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 102px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 134px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 134px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 67px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 179px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 179px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 89.5px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 299px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 299px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 149.5px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 215px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 215px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 107.5px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 281px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 281px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 140.5px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 158px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 158px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 79px, var(--primary-colour) 100%, #0000 150%),
+    radial-gradient(4px 100px at 0px 210px, var(--primary-colour), #0000),
+    radial-gradient(4px 100px at 300px 210px, var(--primary-colour), #0000),
+    radial-gradient(1.5px 1.5px at 150px 105px, var(--primary-colour) 100%, #0000 150%);
   background-size:
     300px 235px,
     300px 235px,
@@ -201,43 +163,4 @@
       278px 6375px,
       426.5px 6480px;
   }
-}
-
-
-
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
