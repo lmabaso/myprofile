@@ -17,12 +17,13 @@ function App() {
 
   return (
     <>
+      {/* <div class="container"></div> */}
       <div className='bg-none h-full w-full flex flex-row overflow-x-hidden overflow-y-hidden box-border '>
         <div className='bg-[#2f2f2f] min-w-[280px] w-[280px] relative flex flex-col rounded-2xl'>
           <header className='flex justify-center items-center flex-col text-center p-5 border-b border-[#232526]'>
             <img src="./img/MyProfile.jpeg" alt="My Profile" className="w-35 h-35 rounded-2xl border border-8 border-[#1f2022]" />
             <div>Liberty Mabaso</div>
-            <div><strong>Web Developer</strong></div>
+            <div><strong>Web <b className='text-[#aefd9c]'>Developer</b></strong></div>
           </header>
           <div className='w-full h-full flex flex-col '>
             {navManu.map((option, idx) => (
@@ -46,6 +47,7 @@ function App() {
               id='desktop'
               className='bg-[#2f2f2f] h-full rounded-2xl p-8 overflow-y-scroll'>
               <div
+                id='container'
                 className='bg-none border-2 '
               >
                 Lorem Ipsum
