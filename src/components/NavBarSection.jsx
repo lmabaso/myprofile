@@ -1,4 +1,6 @@
 import React from 'react'
+import ToggleButton from './ToggleButton';
+import Switch from "./Switch";
 
 const NavBarSection = () => {
   const navManu = [
@@ -36,8 +38,9 @@ const NavBarSection = () => {
         ))}
       </div>
       <footer className='h-[50px] flex  justify-center gap-1.5 py-4 border-t border-[#232526]'>
-        <div>Light Mode</div>
-        <div>Curser effects</div>
+        <Switch />
+        <ToggleButton />
+        <ToggleButton />
       </footer>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
-import LoremIpsum from './LoremIpsum';
+import LoremIpsum from './LoremIpsum'
+
 
 const ContentSection = () => {
   return (
@@ -17,7 +18,9 @@ const ContentSection = () => {
             id='container'
             className=' '
           >
-            <div className='h-18 w-18 border-t-3 border-l-3 border-dotted border-[#aefd9c]'></div>
+            <div className='h-18 w-18 border-t-3 border-l-3 border-dotted border-[#aefd9c]'>
+
+            </div>
             <LoremIpsum />
           </div>
         </div>
