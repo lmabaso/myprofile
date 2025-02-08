@@ -1,8 +1,7 @@
 import React from 'react'
-import LoremIpsum from './LoremIpsum'
+import PropTypes from 'prop-types'
 
-
-const ContentSection = () => {
+const ContentSection = (props) => {
   return (
     <div className='bg-none w-full h-full block py-5 mx-0'>
       <div className='bg-none text-black max-w-[1350px] h-full px-14'>
@@ -18,15 +17,17 @@ const ContentSection = () => {
             id='container'
             className=' '
           >
-            <div className='h-18 w-18 border-t-3 border-l-3 border-dotted border-[#aefd9c]'>
-
-            </div>
-            <LoremIpsum />
+            <div className='h-18 w-18 border-t-3 border-l-3 border-dotted border-[#aefd9c]'></div>
+            <div>{props.element}</div>
           </div>
         </div>
       </div>
     </div>
   )
+}
+
+ContentSection.propTypes = {
+  element: PropTypes.string.isRequired,
 }
 
 export default ContentSection
