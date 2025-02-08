@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const NavBarSection = () => {
   const navManu = [
-    { id: 1, name: "About",         label: "About Me",      status: "active", link: "/"},
+    { id: 1, name: "About",         label: "About Me",      status: "active", link: "/About"},
     { id: 2, name: "Education",     label: "Education",     status: "active", link: "/Education"},
     { id: 3, name: "Skills",        label: "Skills",        status: "active", link: "/Skills" },
     { id: 4, name: "Portfolio",     label: "Portfolio",     status: "active", link: "/Portfolio" },

@@ -13,11 +13,8 @@ const ContentSection = (props) => {
           [&::-webkit-scrollbar-thumb]:bg-[#32343a]
           dark:[&::-webkit-scrollbar-track]:bg-neutral-700
           dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500   '>
-          <div
-            id='container'
-            className=' '
-          >
-            <div className='h-18 w-18 border-t-3 border-l-3 border-dotted border-[#aefd9c]'></div>
+          <div id='container'>
+            <div className='h-18 w-18 border-t-3 border-l-3 border-dotted border-[#aefd9c] float-start left-0 top-0'></div>
             <div>{props.element}</div>
           </div>
         </div>
