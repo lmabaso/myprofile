@@ -1,5 +1,6 @@
 import React from 'react'
 import ContentSection from "../components/ContentSection";
+import NavHeader from '../components/NavHeader';
 
 const Content = () => {
   return (
