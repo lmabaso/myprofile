@@ -2,7 +2,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
-
 const navLinks = [
   { id: 1, name: "About",         label: "About Me",      status: "active", path: "/About" },
   { id: 2, name: "Education",     label: "Education",     status: "active", path: "/Education" },
@@ -21,9 +20,8 @@ const NavLinks = () => {
             key={option.id}
             to={option.path}
             className={({ isActive }) =>
-              `cursor-pointer px-4 h-[50px] border-b border-[#232526] flex items-center ${
-                isActive ? 'bg-[#2a2b2d] text-[#aefd9c]' : 'text-gray-300 hover:bg-[#232526]'
-              }`
+              `cursor-pointer px-4 h-[50px] border-b border-[#232526] flex items-center
+              ${isActive ? 'bg-[#2a2b2d] text-[#aefd9c]' : 'text-gray-300 hover:bg-[#37393a]'}`
             }
           >
             <span className='text-[.95rem] font-bold'>{option.name}</span>

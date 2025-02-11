@@ -17,9 +17,10 @@ function App() {
     <Suspense fallback={<Loading />}>
       <Router basename='/myprofile'>
         <div className='bg-none h-full w-full flex flex-row overflow-x-hidden overflow-y-hidden box-border '>
+          {/* <Loading /> */}
           <NavBarSection />
           <Routes>
-            <Route path='/'             element={<About />} />
+            <Route path='/'             element={<Loading />} />
             <Route path='/About'        element={<About />} />
             <Route path='/Achievements' element={<Achievements />} />
             <Route path='/Contact'      element={<Contact />} />
