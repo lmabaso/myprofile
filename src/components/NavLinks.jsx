@@ -7,8 +7,8 @@ const navLinks = [
   { id: 2, name: "Education",     label: "Education",     status: "active", path: "/Education" },
   { id: 3, name: "Skills",        label: "Skills",        status: "active", path: "/Skills" },
   { id: 4, name: "Portfolio",     label: "Portfolio",     status: "active", path: "/Portfolio" },
-  { id: 5, name: "Achievements",  label: "Achievements",  status: "active", path: "/Achievements" },
-  { id: 6, name: "Contact",       label: "Contact",       status: "active", path: "/Contact" }
+  { id: 5, name: "Achievements",  label: "Achievements",  status: "active", path: "/Achievements" }
+  // { id: 6, name: "Contact",       label: "Contact",       status: "active", path: "/Contact" }
 ];
 
 const NavLinks = () => {
