@@ -11,13 +11,13 @@ import Contact from './pages/Contact';
 import Education from './pages/Education';
 import Portfolio from './pages/Portfolio';
 import Skills from './pages/Skills';
+import Experience from "./pages/Experience";
 
 function App() {
   return (
     <Suspense fallback={<Loading />}>
       <Router basename='/myprofile'>
         <div className='bg-none h-full w-full flex flex-row overflow-x-hidden overflow-y-hidden box-border '>
-          {/* <Loading /> */}
           <NavBarSection />
           <Routes>
             <Route path='/'             element={<Loading />} />
@@ -27,6 +27,7 @@ function App() {
             <Route path='/Education'    element={<Education />} />
             <Route path='/Portfolio'    element={<Portfolio />} />
             <Route path='/Skills'       element={<Skills />} />
+            <Route path='/Experience'   element={<Experience />} />
           </Routes>
         </div>
       </Router>

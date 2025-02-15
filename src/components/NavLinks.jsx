@@ -1,13 +1,15 @@
 
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import IconContainer from './icons/IconContainer';
 
 const navLinks = [
-  { id: 1, name: "About",         label: "About Me",      status: "active", path: "/About" },
-  { id: 2, name: "Education",     label: "Education",     status: "active", path: "/Education" },
-  { id: 3, name: "Skills",        label: "Skills",        status: "active", path: "/Skills" },
-  { id: 4, name: "Portfolio",     label: "Portfolio",     status: "active", path: "/Portfolio" },
-  { id: 5, name: "Achievements",  label: "Achievements",  status: "active", path: "/Achievements" }
+  { id: 1, name: "About",         label: "About Me",      status: "active", path: "/About"},
+  { id: 2, name: "Education",     label: "Education",     status: "active", path: "/Education"},
+  { id: 3, name: "Experience",    label: "Experience",    status: "active", path: "/Experience" },
+  { id: 2, name: "Skills",        label: "Skills",        status: "active", path: "/Skills"},
+  { id: 4, name: "Portfolio",     label: "Portfolio",     status: "active", path: "/Portfolio"},
+  { id: 5, name: "Achievements",  label: "Achievements",  status: "active", path: "/Achievements"}
   // { id: 6, name: "Contact",       label: "Contact",       status: "active", path: "/Contact" }
 ];
 
@@ -24,6 +26,7 @@ const NavLinks = () => {
               ${isActive ? 'bg-[#2a2b2d] text-[#aefd9c]' : 'text-gray-300 hover:bg-[#37393a]'}`
             }
           >
+            <IconContainer name={option.name} className='h-5 w-10 fill-[#6c757d] px-3' />
             <span className='text-[.95rem] font-bold'>{option.name}</span>
           </NavLink>
         )
