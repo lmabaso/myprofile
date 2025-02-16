@@ -1,15 +1,19 @@
-import React from 'react'
-import ToggleButton from './ToggleButton';
+import React, { useState } from 'react'
+import ToggleButton from './buttons/ToggleButton';
 import NavHeader from './NavHeader';
 import NavLinks from './NavLinks';
 import ToggleSidebar from "./buttons/ToggleSidebar";
 
 const NavBarSection = () => {
+  const [toggleSidebar, setToggleSidebar] = useState(true);
+
   return (
-    <div className='font-[lato] bg-[#1a1a1a] min-w-[280px] w-[280px] relative flex flex-col rounded-xl'>
-      <ToggleSidebar />
-      <NavHeader />
-      <NavLinks />
+    <div
+      id='NavBarSection'
+      className='font-[lato] bg-[#1a1a1a] relative flex flex-col rounded-xl'>
+      <ToggleSidebar setToggleSidebar={setToggleSidebar} />
+      <NavHeader toggleSidebar={toggleSidebar} />
+      <NavLinks toggleSidebar={toggleSidebar} />
       <footer className='h-[50px] flex justify-center gap-1.5 py-4 border-t border-[#232526]'>
         <ToggleButton />
       </footer>
