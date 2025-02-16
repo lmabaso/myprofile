@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const NavHeader = () => {
   return (
     <header className='flex justify-center items-center flex-col text-center p-5 border-b border-[#232526]'>
