@@ -23,11 +23,16 @@ const NavLinks = ({toggleSidebar}) => {
             key={option.id}
             to={option.path}
             className={({ isActive }) =>
-              `cursor-pointer px-4 h-[50px] border-b border-[#232526] flex items-center
-              ${isActive ? 'bg-[#2a2b2d] text-[#aefd9c]' : 'text-gray-300 hover:bg-[#37393a]'}`
-            }
-          >
-            <IconContainer name={option.name} className={`h-5 w-10 fill-[#6c757d] px-3 ${!toggleSidebar ? 'mx-auto w-1/2' : ''}`} />
+              `cursor-pointer px-4 h-[55px] border-b border-[#232526] flex items-center
+              ${isActive ?
+                'bg-[#2a2b2d] fill-[#a7ff93] text-[#a7ff93] border-r-4 border-r-[#a7ff93]' :
+                'text-gray-300 fill-[#6c757d] hover:text-[#a7ff93] hover:fill-[#a7ff93]'
+              }`
+            }>
+            <IconContainer
+              name={option.name}
+              className={`h-5 w-10  px-3
+                ${!toggleSidebar ? 'mx-auto w-1/2' : ''}`} />
             {toggleSidebar ? <span className='text-[.95rem] font-bold'>{option.name}</span> : "" }
           </NavLink>
         )

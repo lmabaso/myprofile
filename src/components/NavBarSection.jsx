@@ -10,7 +10,9 @@ const NavBarSection = () => {
   return (
     <div
       id='NavBarSection'
-      className='font-[lato] bg-[#1a1a1a] relative flex flex-col rounded-xl'>
+      className={`font-[lato] bg-[#1a1a1a] relative flex flex-col rounded-xl 
+                  ${toggleSidebar ? 'min-w-[280px] w-[280px]' : 'min-w-[120px] w-[120px]'}}`
+}>
       <ToggleSidebar setToggleSidebar={setToggleSidebar} />
       <NavHeader toggleSidebar={toggleSidebar} />
       <NavLinks toggleSidebar={toggleSidebar} />
