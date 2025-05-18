@@ -33,7 +33,9 @@ const Content = () => {
           </div>
           <div className='text-l font-sans font-normal flex items-center mb-4 text-left'>
             <span>
-              <p>I’m Liberty Mabaso, a web developer based in Midrand, South Africa, with five years of hands-on experience in technology. <br />My journey began in 2003 when I first explored computer systems, sparking a lifelong passion for problem-solving and technical experimentation.</p>
+              <p>I am a web developer from Allandale, Midrand, South Africa. I got into tech from a young age and received my first personal computer in 2003. This sparked my curiosity and I have been learning about computers and technology ever since. I have always been an avid video gamer and enjoy playing a variety of games including FPS, Moba, Fighting, Racing, and FIFA. Chess is also another hobby of mine. I used to be actively involved in sports, particularly volleyball, high jump, and karate. These activities have taught me the importance of teamwork, discipline, and perseverance, which I apply to my work as a web developer.</p>
+              <p>I love experimenting and trying new things because I am not afraid to fail. I believe that failure is just the first step in learning and taking risks is crucial in personal and professional growth. In developer. I am grateful for the opportunities technology has provided me and I am excited to see where my journey takes me next.</p>
+              <i>“The expert at anything was once a beginner.” </i>– Helen Hayes
             </span>
           </div>
         </div>
