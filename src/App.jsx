@@ -20,7 +20,7 @@ function App() {
         <div className='bg-none h-full w-full flex flex-row overflow-x-hidden overflow-y-hidden box-border '>
           <NavBarSection />
           <Routes>
-            <Route path='/'             element={<Loading />} />
+            <Route path='/'             element={<About />} />
             <Route path='/About'        element={<About />} />
             <Route path='/Achievements' element={<Achievements />} />
             <Route path='/Contact'      element={<Contact />} />

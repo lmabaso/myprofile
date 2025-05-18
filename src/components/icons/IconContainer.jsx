@@ -8,6 +8,9 @@ import ExperienceIcon from './ExperienceIcon';
 import PortfolioIcon from './PortfolioIcon';
 import AchievementIcon from './AchievementIcon';
 import MoonIcon from './MoonIcon';
+import CodeSandoxIcon from "./CodeSandoxIcon";
+import DeveloperIcon from "./DeveloperIcon";
+
 
 const iconMap = {
   About: AboutIcon,
@@ -16,7 +19,9 @@ const iconMap = {
   Experience: ExperienceIcon,
   Portfolio: PortfolioIcon,
   Achievements: AchievementIcon,
-  Moon: MoonIcon
+  Moon: MoonIcon,
+  Developer: DeveloperIcon,
+  CodeSandox: CodeSandoxIcon
 };
 
 const IconContainer = ({ name , className }) => {
