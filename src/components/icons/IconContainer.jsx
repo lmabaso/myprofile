@@ -7,6 +7,7 @@ import SkillsIcon from './SkillsIcon';
 import ExperienceIcon from './ExperienceIcon';
 import PortfolioIcon from './PortfolioIcon';
 import AchievementIcon from './AchievementIcon';
+import MoonIcon from './MoonIcon';
 
 const iconMap = {
   About: AboutIcon,
@@ -14,7 +15,8 @@ const iconMap = {
   Skills: SkillsIcon,
   Experience: ExperienceIcon,
   Portfolio: PortfolioIcon,
-  Achievements: AchievementIcon
+  Achievements: AchievementIcon,
+  Moon: MoonIcon
 };
 
 const IconContainer = ({ name , className }) => {

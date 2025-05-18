@@ -3,8 +3,11 @@ import PropTypes from 'prop-types'
 
 const ContentSection = ({ element }) => {
   return (
-    <div className='bg-none w-full h-full block py-5 mx-0'>
-      <div className='bg-none text-black max-w-[1350px] h-full px-14'>
+    <div
+      id='ContentSection'
+      className='bg-none w-full h-full block py-5 mx-0 justify-center items-center'
+    >
+      <div className='bg-none text-black max-w-[1350px] h-full px-14 mx-auto'>
         <div
           id='desktop'
           className='bg-[#1a1a1a] h-full rounded-2xl p-8 overflow-y-auto
