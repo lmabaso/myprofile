@@ -18,7 +18,7 @@ const NavHeader = ({toggleSidebar}) => {
 }
 
 NavHeader.propTypes = {
-  toggleSidebar: PropTypes.string
+  toggleSidebar: PropTypes.bool
 };
 
 export default NavHeader

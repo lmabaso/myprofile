@@ -10,8 +10,8 @@ const navLinks = [
   { id: 3, name: "Experience",    label: "Experience",    status: "active", path: "/Experience" },
   { id: 4, name: "Skills",        label: "Skills",        status: "active", path: "/Skills"},
   { id: 5, name: "Portfolio",     label: "Portfolio",     status: "active", path: "/Portfolio"},
-  { id: 7, name: "Achievements",  label: "Achievements",  status: "active", path: "/Achievements"}
-  // { id: 6, name: "Contact",       label: "Contact",       status: "active", path: "/Contact" }
+  { id: 6, name: "Achievements",  label: "Achievements",  status: "active", path: "/Achievements"}
+  // { id: 7, name: "Contact",       label: "Contact",       status: "active", path: "/Contact" }
 ];
 
 const NavLinks = ({toggleSidebar}) => {
@@ -41,7 +41,7 @@ const NavLinks = ({toggleSidebar}) => {
   )
 }
 NavLinks.propTypes = {
-  toggleSidebar: PropTypes.string
+  toggleSidebar: PropTypes.bool
 };
 
 export default NavLinks
