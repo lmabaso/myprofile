@@ -20,9 +20,12 @@ const ContentSection = ({ element }) => {
             id='container'
             className=''
           >
-            {/* <div className='h-16 w-16 border-t-[3px] border-l-[3px]
-                            border-dotted border-[#aefd9c]
-                            float-left'></div> */}
+            {/* <div
+              className='h-16 w-16
+                        border-t-[3px] border-l-[3px]
+                        border-dotted border-[#aefd9c]
+                        float-left'
+            ></div> */}
             {element}
           </div>
         </div>

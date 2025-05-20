@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import ToggleButton from './buttons/ToggleButton';
+import ToggleButton from '../buttons/ToggleButton';
 import NavHeader from './NavHeader';
 import NavLinks from './NavLinks';
-import ToggleSidebar from "./buttons/ToggleSidebar";
+import ToggleSidebar from "../buttons/ToggleSidebar";
 
 const NavBarSection = () => {
   const [toggleSidebar, setToggleSidebar] = useState(true);

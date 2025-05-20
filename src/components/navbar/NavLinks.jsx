@@ -1,7 +1,6 @@
-
 import React from 'react'
 import { NavLink } from 'react-router-dom';
-import IconContainer from './icons/IconContainer';
+import IconContainer from '../icons/IconContainer';
 import PropTypes from 'prop-types';
 
 const navLinks = [
