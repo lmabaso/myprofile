@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 const MoonIcon = ({ className }) => {
   return (
     <svg
-  className={`${className}`}
-  viewBox="0 0 100 530">
-  <path
+      className={`${className}`}
+      viewBox="0 0 100 530">
+      <path
         d="M0 0
           C5.0725952 3.50250621 8.43352364 6.6168229 9.625 12.8125
           C9.75783703 21.89523213 5.60465324 27.80630949 0 34.625

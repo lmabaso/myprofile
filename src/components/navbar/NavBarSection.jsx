@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import ToggleButton from '../buttons/ToggleButton';
+import React, { useState } from 'react';
 import NavHeader from './NavHeader';
 import NavLinks from './NavLinks';
 import ToggleSidebar from "../buttons/ToggleSidebar";
+import ThemeButton from '../buttons/ThemeButton';
 
 const NavBarSection = () => {
   const [toggleSidebar, setToggleSidebar] = useState(true);
@@ -18,7 +18,7 @@ const NavBarSection = () => {
       <NavLinks toggleSidebar={toggleSidebar} />
       <footer
         className='flex flex-row justify-center items-center py-2 gap-1.5 border-t border-[#232526]'>
-        <ToggleButton />
+        <ThemeButton />
       </footer>
     </div>
   )
