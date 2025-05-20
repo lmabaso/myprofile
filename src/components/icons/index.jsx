@@ -1,0 +1,13 @@
+export { default as AboutIcon } from './AboutIcon';
+export { default as EducationIcon } from './EducationIcon';
+export { default as SkillsIcon } from './SkillsIcon';
+export { default as ExperienceIcon } from './ExperienceIcon';
+export { default as PortfolioIcon } from './PortfolioIcon';
+export { default as AchievementIcon } from './AchievementIcon';
+export { default as DeveloperIcon } from './DeveloperIcon';
+export { default as CodeSandoxIcon } from './CodeSandoxIcon';
+export { default as ChessIcon } from './ChessIcon';
+export { default as GamingIcon } from './GamingIcon';
+export { default as MoonIcon } from './MoonIcon';
+export { default as SunIcon } from './SunIcon';
+export { default as UnavailableIcon } from './UnavailableIcon';

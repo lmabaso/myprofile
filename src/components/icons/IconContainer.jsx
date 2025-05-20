@@ -1,18 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import AboutIcon from "./AboutIcon";
-import EducationIcon from "./EducationIcon";
-import UnavailableIcon from "./UnavailableIcon";
-import SkillsIcon from './SkillsIcon';
-import ExperienceIcon from './ExperienceIcon';
-import PortfolioIcon from './PortfolioIcon';
-import AchievementIcon from './AchievementIcon';
-import MoonIcon from './MoonIcon';
-import CodeSandoxIcon from "./CodeSandoxIcon";
-import DeveloperIcon from "./DeveloperIcon";
-import SunIcon from './SunIcon';
-import ChessIcon from './ChessIcon';
-import GamingIcon from './GamingIcon';
+
+import {
+  AboutIcon,
+  EducationIcon,
+  SkillsIcon,
+  ExperienceIcon,
+  PortfolioIcon,
+  AchievementIcon,
+  DeveloperIcon,
+  CodeSandoxIcon,
+  ChessIcon,
+  GamingIcon,
+  MoonIcon,
+  SunIcon,
+  UnavailableIcon
+} from "./";
 
 
 const iconMap = {
