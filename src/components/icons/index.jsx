@@ -10,4 +10,7 @@ export { default as ChessIcon } from './ChessIcon';
 export { default as GamingIcon } from './GamingIcon';
 export { default as MoonIcon } from './MoonIcon';
 export { default as SunIcon } from './SunIcon';
+export { default as TriangleIcon } from './TriangleIcon';
 export { default as UnavailableIcon } from './UnavailableIcon';
+export { default as BookIcon } from './BookIcon';
+export { default as AIIcon } from './AIIcon';

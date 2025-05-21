@@ -4,7 +4,7 @@ import IconContainer from '../components/icons/IconContainer';
 import Card from '../components/Card';
 
 const interests = [
-  { id: 1,  name: "Reading",  label: "Reading",     status: "active", desc: "Enhancing cognitive flexibility through literature analysis."},
+  { id: 1,  name: "Book",  label: "Reading",     status: "active", desc: "Enhancing cognitive flexibility through literature analysis."},
   { id: 2,  name: "Reseach",  label: "AI Reseach",  status: "active", desc: "Building human-AI collaboration tools for creative workflows."},
   { id: 3,  name: "Chess",    label: "Chess",       status: "active", desc: "Sharpening strategic foresight via game theory patterns."},
   { id: 4,  name: "Gaming",   label: "Gaming",      status: "active", desc: "Cultivating rapid decision-making in resource-constrained scenarios."},
@@ -12,6 +12,7 @@ const interests = [
 ];
 
 const Content = () => {
+  console.log(window.innerWidth)
   return (
     <div className='w-full font-[Orbitron] font-bold size-7 text-center'>
       <div
@@ -23,7 +24,9 @@ const Content = () => {
           <IconContainer name='CodeSandox' className='h-6 w-6' />
           <span className=''>Hello...</span>
         </div>
-        <h3 className='text-white text-4xl'> I&apos;m <span className='text-[#aefd9c]'>Liberty Mabaso!</span></h3>
+        <h3 className='text-white text-4xl'>
+          I&apos;m <span className='text-[#aefd9c]'>Liberty Mabaso!</span>
+          </h3>
       </div>
       <div
         id='ContentBody'
@@ -31,7 +34,6 @@ const Content = () => {
         <h4 className='font-bold flex items-center my-3 text-2xl'>
           <span className='text-[#aefd9c] text-[2rem] pr-3'>|</span>
           <span><span className='text-[#aefd9c]'>A little bit </span>about me... </span>
-          <div id='InnerBody'></div>
         </h4>
         <div className='flex'>
           <div>
@@ -44,11 +46,9 @@ const Content = () => {
             </span>
           </div>
         </div>
-
         <h4 className='font-bold flex items-center my-2 text-2xl'>
           <span className='text-[#aefd9c] text-[2rem] pr-3'>|</span>
           <span>Personal <span className='text-[#aefd9c]'>interests</span></span>
-          <div id='InnerBody'></div>
         </h4>
         <div className='flex flex-wrap gap-4'>
           {interests.map(interest =>

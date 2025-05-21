@@ -14,6 +14,9 @@ import {
   GamingIcon,
   MoonIcon,
   SunIcon,
+  TriangleIcon,
+  BookIcon,
+  AIIcon,
   UnavailableIcon
 } from "./";
 
@@ -30,7 +33,10 @@ const iconMap = {
   Developer: DeveloperIcon,
   CodeSandox: CodeSandoxIcon,
   Chess: ChessIcon,
-  Gaming: GamingIcon
+  Gaming: GamingIcon,
+  Triangle: TriangleIcon,
+  Book: BookIcon,
+  Reseach: AIIcon
 };
 
 const IconContainer = ({ name , className }) => {
