@@ -21,7 +21,7 @@ const Content = () => {
         <div
           className='mb-2 text-2xl gap-1.5 text-center
                     items-center flex flex-row justify-center'>
-          <IconContainer name='CodeSandox' className='h-6 w-6' />
+          <IconContainer name='CodeSandox' className='h-6 w-6'/>
           <span className=''>Hello...</span>
         </div>
         <h3 className='text-white text-4xl'>

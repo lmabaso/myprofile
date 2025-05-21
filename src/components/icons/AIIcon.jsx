@@ -63,7 +63,7 @@ const AIIcon = ({ className }) => {
   )
 }
 
-AIIcon.PropTypes = {
+AIIcon.propTypes = {
   className: PropTypes.string
 };
 

@@ -11,7 +11,7 @@ const BookIcon =  ({ className }) => {
   )
 }
 
-BookIcon.PropTypes = {
+BookIcon.propTypes = {
   className: PropTypes.string
 };
 

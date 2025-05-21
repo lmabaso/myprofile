@@ -15,14 +15,14 @@ const navLinks = [
 
 const NavLinks = ({toggleSidebar}) => {
   return (
-    <div className='w-full h-full flex flex-col '>
+    <div className='w-full h-full flex flex-col'>
       {navLinks.map((option) => (
         option.status === "active" && (
           <NavLink
             key={option.id}
             to={option.path}
             className={({ isActive }) =>
-              `cursor-pointer px-4 h-[55px] border-b border-[#232526] flex items-center
+              `cursor-pointer px-4 h-[55px] min-h-[55px] border-b border-[#232526] flex items-center
               ${isActive ?
                 'bg-[#2a2b2d] fill-[#a7ff93] text-[#a7ff93] border-r-4 border-r-[#a7ff93]' :
                 'text-gray-300 fill-[#6c757d] hover:text-[#a7ff93] hover:fill-[#a7ff93]'

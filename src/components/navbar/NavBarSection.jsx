@@ -15,9 +15,15 @@ const NavBarSection = () => {
                 `}>
       <ToggleSidebar setToggleSidebar={setToggleSidebar} />
       <NavHeader toggleSidebar={toggleSidebar} />
-      <NavLinks toggleSidebar={toggleSidebar} />
+      <div className='overflow-y-auto [&::-webkit-scrollbar]:w-1
+                    [&::-webkit-scrollbar-track]:bg-[#111111]
+                    [&::-webkit-scrollbar-thumb]:bg-[#32343a]
+                    dark:[&::-webkit-scrollbar-track]:bg-neutral-700
+                    dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500'>
+        <NavLinks toggleSidebar={toggleSidebar} />
+      </div>
       <footer
-        className='flex flex-row justify-center items-center py-2 gap-1.5 border-t border-[#232526]'>
+        className='sticky border-0 flex flex-row justify-center items-center py-2 gap-1.5 border-t border-[#232526] z-10'>
         <ThemeButton />
       </footer>
     </div>
