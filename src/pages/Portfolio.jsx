@@ -1,17 +1,13 @@
 import React from 'react'
 import ContentSection from "../components/ContentSection";
 import IconContainer from '../components/icons/CodeSandoxIcon';
+import Heading from '../components/Heading';
 
 const Content = () => {
   return (
-
-      <div className='w-full font-[Orbitron] font-bold size-7 text-center '>
-        <div className='mb-2 text-2xl items-center flex flex-row justify-center gap-1.5'>
-          <IconContainer name='CodeSandox' className='h-6 w-6 fill-[#6c757d]' />
-          <span className='text-[#6c757d]'>Take a look at</span>
-        </div>
-        <h3 className='text-white text-4xl'>My <span className='text-[#aefd9c]'>Portfolio</span></h3>
-      </div>
+    <div className='w-full font-[Orbitron] font-bold size-7 text-center '>
+      <Heading section1='Take a look at' section2='My'  hSection3='true'  section3={'Portfolio'} />
+    </div>
   )
 }
 

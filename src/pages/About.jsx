@@ -2,6 +2,7 @@ import React from 'react'
 import ContentSection from '../components/ContentSection';
 import IconContainer from '../components/icons/IconContainer';
 import Card from '../components/Card';
+import Heading from '../components/Heading';
 
 const interests = [
   { id: 1,  name: "Book",  label: "Reading",     status: "active", desc: "Enhancing cognitive flexibility through literature analysis."},
@@ -12,22 +13,9 @@ const interests = [
 ];
 
 const Content = () => {
-  console.log(window.innerWidth)
   return (
     <div className='w-full font-[Orbitron] font-bold size-7 text-center'>
-      <div
-        id='ContentHeader'
-        className='fill-[#6c757d] text-[#6c757d] pt-5'>
-        <div
-          className='mb-2 text-2xl gap-1.5 text-center
-                    items-center flex flex-row justify-center'>
-          <IconContainer name='CodeSandox' className='h-6 w-6'/>
-          <span className=''>Hello...</span>
-        </div>
-        <h3 className='text-white text-4xl'>
-          I&apos;m <span className='text-[#aefd9c]'>Liberty Mabaso!</span>
-          </h3>
-      </div>
+      <Heading section1='Hello...' section2='I&apos;m '  hSection3='true'  section3={'Liberty Mabaso!'} />
       <div
         id='ContentBody'
         className='fill-[#6c757d] pt-5 text-white '>
