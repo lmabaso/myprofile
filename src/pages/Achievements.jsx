@@ -6,7 +6,7 @@ import Heading from '../components/Heading';
 const Content = () => {
   return (
     <div className='w-full font-[Orbitron] font-bold size-7 text-center '>
-      <Heading section1='Here are my' section2='Career'  hSection3='true'  section3='Achievements' />
+      <Heading section1='Here are my' section2='Career' hSection3 section3='Achievements' />
     </div>
   )
 }

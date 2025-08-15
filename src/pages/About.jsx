@@ -15,7 +15,7 @@ const interests = [
 const Content = () => {
   return (
     <div className='w-full font-[Orbitron] font-bold size-7 text-center'>
-      <Heading section1='Hello...' section2='I&apos;m '  hSection3='true'  section3={'Liberty Mabaso!'} />
+      <Heading section1='Hello...' section2='I&apos;m ' hSection3 section3={'Liberty Mabaso!'} />
       <div
         id='ContentBody'
         className='fill-[#6c757d] pt-5 text-white '>
@@ -50,6 +50,7 @@ const Content = () => {
           {interests.map(interest =>
             interest.status === 'active' && (
               <Card
+                cardType='interests'
                 key={interest.id}
                 image={interest.name}
                 Head={interest.label}
